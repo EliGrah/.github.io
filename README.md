@@ -7,8 +7,8 @@ ATLS Web Rep
 
 # Five facts about me
 
-I am an ATLS Major and CS Minor
-I enjoy traveling 
-I am a nontraditional student, I started college when I was 22
-I really enjoy coding and am excited to learn more about HTML
-I plan on working in the Augmented Reality and AI field 
+I am an ATLS Major and CS Minor  
+I enjoy traveling  
+I am a nontraditional student, I started college when I was 22  
+I really enjoy coding and am excited to learn more about HTML  
+I plan on working in the Augmented Reality and AI field   
