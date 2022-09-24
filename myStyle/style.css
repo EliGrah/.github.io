@@ -1,3 +1,126 @@
+html {
+  font-family: 'Inter';
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center; !important;
+}
+
+h1 {
+  
+  width: 344px;
+  height: 82px;
+  
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+h2 {
+  
+  width: 309px;
+  height: 59px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 57px;
+  border-bottom: 5px;
+}
+
+h3 {
+  
+  width: 231px;
+  height: 32px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+h4 {
+  /* For NavBar */
+  width: 200px;
+  height: 33px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h5 {
+  width: 125px;
+  height: 20px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h6 {
+  width: 115px;
+  height: 19px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+hr {
+  width: 478px;
+  height: 0px;
+  border: 4px solid #FCCD12;
+}
+
+a:link {
+  color: #88DAF3;
+  text-decoration-line:none;
+}
+
+a:visited {
+  color: #F83FDF;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  color: #88DAF3;
+}
+
+ul.a {
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FCCD12;
+}
+
+ol.c {
+  position: absolute;
+  width: 11px;
+  height: 18px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FCCD12;
+  border: 1px solid #FCCD12;
+}
+
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -5,12 +128,14 @@
 }
 
 .topnav a {
+    font-family: 'Inter';
+    font-style: normal;
     float: left;
     color: white;
     text-align: center;
     margin: 3px 16px;
     padding-bottom: 3px;
-    font-size: 22px;
+    font-size: 24px;
     text-decoration: none;
     position: relative;
 }
@@ -35,7 +160,3 @@
 
 
  
-body {
-    background-color: black;
-    color: white;
-}
