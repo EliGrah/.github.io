@@ -5,7 +5,7 @@ ATLS Web Rep
 ## This is Eli's web server
 *I am excited*
 
-# Five facts about me
+### Five facts about me
 
 I am an ATLS Major and CS Minor  
 I enjoy traveling  
