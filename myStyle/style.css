@@ -5,10 +5,9 @@ html {
 
 
 h1 {
-  
-  width: 344px;
-  height: 82px;
-  
+  width: auto;
+  text-align: center;
+  margin: auto;
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 900;
@@ -17,10 +16,6 @@ h1 {
 }
 
 h2 {
-  
-  width: 309px;
-  height: 59px;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -30,10 +25,7 @@ h2 {
 }
 
 h3 {
-  
-  width: 231px;
-  height: 32px;
-
+  width: auto;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -42,10 +34,6 @@ h3 {
 }
 
 h4 {
-  /* For NavBar */
-  width: 200px;
-  height: 33px;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
@@ -54,9 +42,6 @@ h4 {
 }
 
 h5 {
-  width: 125px;
-  height: 20px;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -65,14 +50,18 @@ h5 {
 }
 
 h6 {
-  width: 115px;
-  height: 19px;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+}
+
+p {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
 }
 
 hr {
@@ -92,7 +81,6 @@ a:visited {
 
 a:hover {
   text-decoration-line: underline;
-  color: #88DAF3;
 }
 
 ul.a {
@@ -117,23 +105,96 @@ ol.c {
   border: 1px solid #FCCD12;
 }
 
- @media screen and (min-width: 480px) {
-  .grid {
-    margin: 0 auto;
-    padding: 20px 20px;
-    max-width: 980px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+img {
+  width: 100%;
+  height: auto;
+  display: grid;
+  padding: 60px 0px;
+}
+.rep_img {
+  max-width: 325px;
+}
+.headshot {
+  transform: rotate(90deg);
+  max-width: 350px;
+}
+.fixme_img {
+  max-width: 325px;
+}
+
+body {
+  background-color: #F0E9D6;
+  color: black;
+}
+.main_page {
+  background-color: black;
+  color: white;
+}
+
+/*homepage grid */
+.grid_home {
+  margin: 0 auto;
+  padding: 20px 20px;
+  max-width: 980px;
+  display: grid;
+  grid-template-rows: 2f 1fr 2fr 2fr;
+  gap: 10px;
+}
+.item-1 {
+  grid-area: 1;
+}
+.item-1_aside {
+  grid-area: 1 / 2;
+}
+.item-2 {
+  grid-area: 2;
+}
+.item-flex {
+  grid-area: 2;
+}
+.item-3 {
+  grid-area: 3;
+}
+.item-4 {
+  grid-area: 4;
+}
+
+
+
+.grid {
+  margin: 0 auto;
+  padding: 20px 20px;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+
+/* FOR PHONE SCREENS */
+ @media screen and (max-width: 1170px) {
+  body {
+    text-align: center;
   }
 
-  body {
-    background-color: white;
-    color: black;
+  .grid {
+    grid-template-columns: 100%;
   }
-  
+  .item-flex {
+    grid-area: 3;
+  }
+
+  /* Gets rid of images */
+  .headshot {
+    max-width: 0%;
+  }
+  .rep_img {
+    max-width: 0%;
+  }
+
   .topnav {
-    background-color: white;
+    background-color: Black;
     overflow: hidden;
     padding: 4px 0px 4px;
     position: sticky;
@@ -142,7 +203,7 @@ ol.c {
 
 .topnav a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     margin: 3px 16px;
     padding-bottom: 3px;
@@ -164,30 +225,17 @@ ol.c {
    transform-origin: bottom right;
  }
 
- img {
-  width: 375px;
-  height: auto;
-  transform: rotate(90deg);
-  display: grid;
-  padding: 120px 0px;
-}
+ .topnav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+ }
+
 }
 
-@media screen and (min-width: 1080px) {
-  .grid {
-    margin: 0 auto;
-    padding: 20px 20px;
-    max-width: 980px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  body {
-    background-color: black;
-    color: white;
-  }
+/* FOR COMPUTER SCREENS */
+@media screen and (min-width: 1171px) {
   .topnav {
+    width: 100%;
     background-color: black;
     overflow: hidden;
     padding: 4px 0px 4px;
@@ -225,13 +273,6 @@ ol.c {
    transform-origin: bottom left;
  }
 
- img {
-  max-width: 100%;
-  height: auto;
-  transform: rotate(90deg);
-  display: grid;
-  padding: 50px 0px;
- }
 }
 
 
