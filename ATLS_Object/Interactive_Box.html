@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../myStyle/style.css"> 
+    <title>Interactive Box</title>
+</head>
+<body>
+    <h1>ATLS Object</h1>
+    <h2>Interactive Box</h2>
+    <main class="grid">
+        <div class="item-1">
+            <h3>Part 1: Variable Input & Output</h3>
+            <p>I decided to use an analog stick for my input, so I incorporated 
+                this into my initial test build. To the right you can see the original
+                schematic I made to connect and test everything.
+            </p>
+        </div>
+        <div class="item-1">
+            <img src="../img/atls_object/inter_box/Schem_1.jpeg" alt="Schematic of Part 1">
+        </div>
+        <div class="item-2">
+            <p>Pressing the button on the analog stick would turn the LED off while held down.
+                The Y-axis controlled the brightness of one LED and the X-axis controlled the other.
+            </p>
+        </div>
+        <div class="item-2">
+            <iframe src="https://www.youtube.com/embed/D8R70tcQJCg"></iframe>
+        </div>
+        <div class="item-3">
+            <h3>Part 2: Interactive Sensor Box</h3>
+            <p>After going through many different designs and ideas. I decided to go with 3 LED strips connected to 
+                different inputs. To the right you can see the different connections on the arduino board
+                I did. The official circuit design would look very similar to the original schematic in part 1, just with new
+                LEDS.
+            </p>
+        </div>
+        <div class="item-3">
+            <img src="../img/atls_object/inter_box/Schem_2.png" alt="Schematic 2">
+        </div>
+        <div class="item-4">
+            <p>As the analog stick is rotated it will change one LED strips color. It has access to the 
+                full RGB range. Clicking the analog stick will save the color on the current LED strip and move 
+                to changing the next LED strip. The code for this can be <a href="https://gist.github.com/EliGrah/8a160ccb1088e04a5e4c1e7361c567d4">found here</a>.
+            </p>
+        </div>
+        <div class="item-4">
+            <iframe src="https://www.youtube.com/embed/kUc_Fqo90Rk"></iframe>
+        </div>
+        <div class="item-5">
+            <h3>Creating the Box</h3>
+            <p>The original plan was to 3d print a box, unfortunately due to long print times
+                and having to redesign certain parts of the box, this ended up not working out. So
+                I used the next best thing, and spray painted a small carboard box. After cutting some holes
+                and placing all the guts inside. The final design was done!
+            </p>
+        </div>
+        <div class="item-5">
+            <iframe src="https://www.youtube.com/embed/3aVldRKF9V0"></iframe>
+        </div>
+        <div class="item-6">
+            <h3>The Guts</h3>
+            <p>The analog stick is connected directly to the bread board. I used the adhesive on the breadboard
+                to stick it to the back of the box to keep it in place. The actual Arduino board floats in the middle of
+            the box. The LED stips are connected with adhesive to the top of the box. </p>
+        </div>
+        <div class="item-6">
+            <img src="../img/atls_object/inter_box/Box_Guts.jpeg" alt="Guts of the box">
+        </div>
+    </main>
+</body>
+</html>
