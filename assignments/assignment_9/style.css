@@ -1,0 +1,62 @@
+h1 {
+  width: auto;
+  text-align: center;
+  margin: auto;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+  background-color: #F0E9D6;
+  color: black;
+  
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px;
+}
+
+.displayed-img {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 480px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 480px;
+  background-color: rgba(0,0,0,0);
+}
+
+
+button {
+  font-family: 'Inter';
+  font-style:  normal;
+  border: 0;
+  background: rgba(43, 21, 21, 0.6);
+  text-shadow: 1px 1px 1px rgb(240, 110, 199);
+  border: 1px solid rgb(39, 39, 39);
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+}
