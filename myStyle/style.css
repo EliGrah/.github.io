@@ -143,7 +143,7 @@ img {
   width: 100%;
   height: auto;
   display: grid;
-  padding: 60px 0px;
+  padding: 20px 10px;
 }
 .rep_img {
   max-width: 325px;
