@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../myStyle/style.css"> 
+    <title>Game Controller</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="ATLS_Web.html">ATLS Web</a>
+        <a href="ATLS_Object.html">ATLS Object</a>
+        <a href="Contact_Me.html">Contact Me</a>
+    </div>
+
+    <h1>ATLS Object</h1>
+    <h2>Game Controller</h2>
+    <main class="grid">
+        <div class="item-1">
+            <h3>Part 1: Creating new Arduino Code</h3>
+            <p>Using my previous controller from the <a href="Interactive_Box.html">Interactive Box Lab</a>, I was in a good spot
+                to have an easy time with this lab due to the fact that my inputs were coming from an analog stick, a staple for controlling
+                video games. I decided to only use the x and y potentiometer inputs and disregard the button input. For my arduino code, 
+                <a href="https://gist.github.com/EliGrah/b492406bdca975060785b1792dea23c2">Link found here</a>, I took my previous made arduino code
+                and simplified it down to only be taking my two inputs and printing them into the serial port in the desired format for p5.js.
+            </p>
+        </div>
+        <div class="item-1">
+            <img src="../img/atls_object/inter_box/Box.jpeg" alt="Interactive Box">
+        </div>
+        <div class="item-2">
+            <p>Pictured is the original circuit I made for my interactive box. While the inputs and outputs are all still connected,
+                I'm only going to be using my A0, and A1 ports for this lab. After confirming that I was getting good results and feedback in my
+                serial port for the x and y potienometers in my analog stick, I moved on to creating the program in p5.js.
+            </p>
+        </div>
+        <div class="item-2">
+            <img src="../img/atls_object/inter_box/Schem_2.png" alt="Schematic of Interactive Box">
+        </div>
+        <div class="item-3">
+            <h3>Part 2: Creating the p5.js Code</h3>
+            <p>After creating the basic structure of the p5 code using the resouces given to us for reading the arduino input 
+                and translating it into information we can use to control our game, I started working on creating the actual game.
+                I borrowed heavily from an already existing example for p5. I used the <a href="https://p5js.org/examples/interaction-snake-game.html">snake game example</a>,
+                written by Prashant Gupta, for the basis of my code. Pictured is what the original making of the game looked like. Using the 
+                jkli keys on your keyboard, you could control the snake.
+            </p>
+        </div>
+        <div class="item-3">
+            <img src="../img/atls_object/game_controller/orig_snake.png" alt="Screenshot of original snake">
+        </div>
+        <div class="item-4">
+        <h3>Making the code my own</h3>
+        <p>First I replaced the input for the game with the inputs from my controller. Instead of jkli you would instead move the analog
+            stick to change the direction of the snake. Moving the analog stick up would make the snake go up, moving the stick down makes the snake go down, and so on and so forth. Next, I changed
+            the graphics to make it more reminiscent of how I remember snake, playing it on old flip phones. I did this by changing the colors
+            into a green color and made the text more retro. I also wanted to add my own twist to the game code so I created special fruits that would 
+            pop up for the snake to eat that would give extra points.
+        </p>
+    </div>
+    <div class="item-4">
+        <img src="../img/atls_object/game_controller/new_snake.png" alt="Screenshot of new snake"> 
+    </div>
+    <div class="item-5">
+        <h3>The Final Product</h3>
+        <p>Lots of troubleshooting later and I have a finished snake game fully compatible with my controller! Check out the 
+            video of it in action and view the source code <a href="https://editor.p5js.org/EliGrah/sketches/BFOFNA6tc">here</a>.
+            Thank you!
+        </p>
+    </div>
+    <div class="item-5">
+        <iframe src="https://www.youtube.com/embed/5esfkLhd3D4"></iframe>
+    </div>
+
+</body>
+</html>
