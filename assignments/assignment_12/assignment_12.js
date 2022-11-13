@@ -1,39 +1,60 @@
+let numDump = [num0, num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12, num13, num14, num15,
+     num16, num17, num18, num19, num20, num21, num22, num23, num24, num25, num26, num27, num28, num29, num30, num31];
+for(i = 0; i < 32; i++) {
+    numDump[i].addEventListener('click', genNum);
+}
+
+var input = document.getElementById('phone');
 const button = document.querySelector('.button');
-const output = document.querySelector('.output');
-let phone_content = document.querySelector('.phone');
+button.addEventListener('click', submitNum);
 
-button.addEventListener('click', updateOutput);
+let checkArray = [];
+for(i = 0; i < 32; i++) {
+    checkArray[i] = document.getElementById("num" + i);
+}
+let binArray = [];
+let finalBinNum;
+let finalDecNum;
+let phonNum;
 
-function updateOutput() {
-    output.textContent = phone_content.value;
-    console.log(output.textContent); //am i dumb?
+function genNum() {
+    for(i = 0; i < 32; i++) {
+        if (checkArray[i].checked) {
+            binArray[i] = 1;
+        } else {
+            binArray[i] = 0;
+        }
+    }
+    finalBinNum = binArray.join('');
+    console.log(finalBinNum);
+    finalDecNum = parseInt(finalBinNum, 2);
+    console.log(finalDecNum);
+
+   phoneNum = 0;
+    for(i = 0; i < 9; i++) {
+        if(i == 2 || i == 5){
+            phoneNum = phoneNum + '-';
+        } 
+        if(finalDecNum.toString()[i] == undefined){
+            phoneNum = phoneNum + '0';
+        } else {
+            phoneNum = phoneNum + finalDecNum.toString()[i]
+        }
+    }
+
+    console.log(phoneNum);
+    document.getElementById('binNum').innerHTML
+                = finalBinNum;
+    document.getElementById('phone').value
+                = phoneNum;           
+}
+
+function submitNum(){
+    window.alert(phoneNum + ' has been submitted.')
 }
 
 
-//input binary for first 3 numbers
-parseInt(x, 2); //converts binary to decimal
 
-//"oh no! we didn't make enough room for the rest of the number, pls left shift your binary however many times you need"
-//"times the input by 2^_?"
 
-x = x << input; //do parse int after
 
-//binary getting boring lets switch over to hex
-if(input == 0){"no cheating!"}
-//Oh, pls shift this one over as well 
-y = y << input;
 
-parseInt(y, 16)
-
-z = x + y;
-//are you happy with your number so far?
-//display z
-//yes or no
-if(no){"sigh lets start over"}
-if(yes)
-//great! now, user feedback has let us know this procsss has been a little too complicated so we're going to simplify it down 
-//please incrment your last number by clicking
-
-//random increase by random(1-10)
-
-//went too far? click this button to divide by half
