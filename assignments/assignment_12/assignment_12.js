@@ -32,6 +32,9 @@ function genNum() {
 
    phoneNum = 0;
     for(i = 0; i < 9; i++) {
+        if(i == 0){
+            phoneNum = finalDecNum.toString()[0];
+        }
         if(i == 2 || i == 5){
             phoneNum = phoneNum + '-';
         } 
