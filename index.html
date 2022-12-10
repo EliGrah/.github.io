@@ -5,34 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myStyle/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Home Page</title>
 </head>
 <body class="main_page">
     <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="ATLS_Web.html">ATLS Web</a>
-        <a href="ATLS_Object.html">ATLS Object</a>
-        <a href="Contact_Me.html">Contact Me</a>
+        <a class ="topMenu" href="index.html">Home</a>
+        <a class ="topMenu" href="ATLS_Web.html">ATLS Web</a>
+        <a class ="topMenu" href="ATLS_Object.html">ATLS Object</a>
+        <a class ="topMenu" href="Contact_Me.html">Contact Me</a>
+        <a class ="topMenu" href="About_Me.html">About Me</a>
+        <a class ="topMenu" href="RGB_Game.html">RGB Game</a>
     </div>
+    <div class="phoneNav">
+        <li><a class ="topMenu" href="index.html">Home</a></li>
+        <li><a class ="topMenu" href="ATLS_Web.html">ATLS Web</a></li>
+        <li><a class ="topMenu" href="ATLS_Object.html">ATLS Object</a></li>
+        <li><a class ="topMenu" href="Contact_Me.html">Contact Me</a></li>
+        <li><a class ="topMenu" href="About_Me.html">About Me</a></li>
+        <li><a class ="topMenu" href="RGB_Game.html">RGB Game</a></li>
+    </div>
+    <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
+
+
 
     <main class="grid_home">
-        <div class="item-1">
+        <div>
             <img src="img/act_img/Name_Card.png" alt="Name Card">
         </div>
-        <div class="item-2">
+        <div>
             <h1>Projects</h1>
         </div>
-        <div class="item-3">
+        <div>
             <a href="https://github.com/EliGrah/EliGrah.github.io">
                 <img src="img/act_img/Website_Card.png" alt="website card">
             </a>
         </div>
-        <div class="item-4">
+        <div>
             <img src="img/act_img/ComingSoon_Card.png" alt="coming soon card">
         </div>
         
         
     </main>
-       
+    <script src="./java/myJava.js"></script>   
 </body>
 </html>

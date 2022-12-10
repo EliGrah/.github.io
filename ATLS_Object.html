@@ -6,14 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATLS Object</title>
    <link rel="stylesheet" href="myStyle/style.css"> 
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="ATLS_Web.html">ATLS Web</a>
-        <a href="ATLS_Object.html">ATLS Object</a>
-        <a href="Contact_Me.html">Contact Me</a>
+        <a class ="topMenu" href="index.html">Home</a>
+        <a class ="topMenu" href="ATLS_Web.html">ATLS Web</a>
+        <a class ="topMenu" href="ATLS_Object.html">ATLS Object</a>
+        <a class ="topMenu" href="Contact_Me.html">Contact Me</a>
+        <a class ="topMenu" href="About_Me.html">About Me</a>
+        <a class ="topMenu" href="RGB_Game.html">RGB Game</a>
     </div>
+    <div class="phoneNav">
+        <li><a class ="topMenu" href="index.html">Home</a></li>
+        <li><a class ="topMenu" href="ATLS_Web.html">ATLS Web</a></li>
+        <li><a class ="topMenu" href="ATLS_Object.html">ATLS Object</a></li>
+        <li><a class ="topMenu" href="Contact_Me.html">Contact Me</a></li>
+        <li><a class ="topMenu" href="About_Me.html">About Me</a></li>
+        <li><a class ="topMenu" href="RGB_Game.html">RGB Game</a></li>
+        
+    </div>
+    <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
+
+
     <h1>ATLS Object Repository</h1>
 
     <main class="grid">
@@ -22,23 +41,24 @@
             <p>Creating a basic parallel and series circuit given a schematic. See more <a href="ATLS_Object/Series_para_circuit.html">here</a>.</p> 
             
         </article>
-        <aside class="item-1">
-            <img src="img/atls_object/para_series_circuit/parallel_circuit.webp" alt="parallel circuit">
+        <aside class="item-1_aside">
+            <img class="rep_img" src="img/atls_object/para_series_circuit/parallel_circuit.webp" alt="parallel circuit">
         </aside>
-        <div class="item-2">
+        <div class="item-1">
             <h3>The Interactive Box</h3>
             <p>Making a clean, wire free, <a href="ATLS_Object/Interactive_Box.html">interactive box</a>.</p>
         </div>
-        <div class="item-2">
-            <img src="img/atls_object/inter_box/Box.jpeg" alt="Final product">
+        <div class="item-1_aside">
+            <img class="rep_img" src="img/atls_object/inter_box/Box.jpeg" alt="Final product">
         </div>
-        <div class="item-3">
+        <div class="item-1">
             <h3>The Interactive Box</h3>
             <p>Using my interactive box as a controller for a  <a href="ATLS_Object/game_controller.html">video game</a>.</p>
         </div>
-        <div class="item-3">
-            <img src="img/atls_object/game_controller/new_snake.png" alt="Video Game">
+        <div class="item-1_aside">
+            <img class="rep_img" src="img/atls_object/game_controller/new_snake.png" alt="Video Game">
             </div>
     </main>
+    <script src="./java/myJava.js"></script>   
 </body>
 </html>
