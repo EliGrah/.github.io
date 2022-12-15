@@ -56,6 +56,9 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 }
+p.indent {
+  text-indent: 30px;
+}
 
 .button {
   font-family: "helvetica neue", helvetica, sans-serif;
@@ -138,6 +141,11 @@ img {
   height: auto;
   display: grid;
   padding: 20px 10px;
+}
+.rotate {
+  transform: rotate(270deg);
+  max-width: 70%;
+  padding-left: 200px;
 }
 .rep_img {
   max-width: 325px;

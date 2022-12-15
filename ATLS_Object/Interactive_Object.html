@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Object</title>
+    <link rel="stylesheet" href="../myStyle/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <a class ="topMenu" href="../index.html">Home</a>
+        <a class ="topMenu" href="../ATLS_Web.html">ATLS Web</a>
+        <a class ="topMenu" href="../ATLS_Object.html">ATLS Object</a>
+        <a class ="topMenu" href="../Contact_Me.html">Contact Me</a>
+        <a class ="topMenu" href="../About_Me.html">About Me</a>
+        <a class ="topMenu" href="../RGB_Game.html">RGB Game</a>
+    </div>
+    <div class="phoneNav">
+        <li><a class ="topMenu" href="../index.html">Home</a></li>
+        <li><a class ="topMenu" href="../ATLS_Web.html">ATLS Web</a></li>
+        <li><a class ="topMenu" href="../ATLS_Object.html">ATLS Object</a></li>
+        <li><a class ="topMenu" href="../Contact_Me.html">Contact Me</a></li>
+        <li><a class ="topMenu" href="../About_Me.html">About Me</a></li>
+        <li><a class ="topMenu" href="../RGB_Game.html">RGB Game</a></li>
+        
+    </div>
+    <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
+    
+    <h1>ATLS Object</h1>
+    <h2>Object Final: Interactive Object</h2>
+    <main class="grid">
+        <div class="item-1">
+            <h3>The Object</h3>
+            <p class="indent">For my project I decided to create an interactive 4x4x4 Led Matrix. Using the charlieplexing technique, 
+                I would solder 64 RGB Leds into 16 individual spires and be able to control all 64 Leds individually
+                using only 16 pins on an arduino board. The final 4 pins on the arduino would be used for 2 microphones,
+                a button, and a speaker.
+            </p>
+            <p class="indent">
+                The object, using the microphones, would listen for sound coming from the outside world, and the Leds in the matrix
+                would interact with that sound, mainly by having the patterns programmed into the Leds only continue when sound is
+                heard. The button would be used to switch to different patterns. The speaker would be used as an alarm linked to a timer.
+            </p>
+            <p class="indent">
+                The original idea for the object differed slightly, as can be seen from the initial design mockup pictured to the right.
+                Originally, instead of rgb Leds, it would just be blue leds, still soldered together, and programmed to seem like rain falling.
+                The object was meant to be kept at a bedside table, used as a calming light with white noise coming from motors. There was also
+                a gimmick lightning rod to add more interactability with the object. This idea ended up being heavily modified into the final design,
+                mostly because of the lack of interaction capable with the object, as well as the motors not working well to mimic the sound of rain
+                and create white noise.
+            </p>
+            <p class="indent">
+                The original idea of the Led matrix was kept, but made to be comprised of rgb Leds, to open up more pattern selection and options
+                when it came to lighting. The motors and lightning rod were scrapped and replaced with microphones. Now, the object is able to 
+                listen to the outside world and be much more interactable, able to listen to people speak around it, or music playing, and have 
+                lights react to those sounds, creating an almost hypnotic effect, especially when speaking and seeing a visual representation
+                of your words coming to life via the Leds lighting up.
+            </p>
+            <p class="indent">
+                I wanted to have something that would always be passively working in the background that enriches the enviroment. My original idea 
+                was a little too gimmicky, especially the lightning rod. It felt like something you would do once and then never touch again. I wanted
+                to create something that would outlast the first initial impression and use. I wanted to create an experience that people would be willing to come back
+                to, and I think I succeeded making that goal with this object. By making it a more passive experience, something that can happen and exist
+                without having to be provided your full attention, i made something that works in the modern world where people are rarely focused on one thing.
+                I like to think that I made something that people would enjoy having, and would continue to use and enrich their life with. Whether it's enhancing
+                music or just the words you're saying, my Led box adds another flavor to the sound that exists around you.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img src="../img/atls_object/inter_object/orig_design.jpeg" alt="Original sketch design.">
+        </div>
+        <div class="item-1">
+            <h3>Creating the Led Matrix</h3>
+            <p class="indent">
+                Creating my matrix included a ton of soldering. In fact, when it was all said and done,
+                there were 336 solder points for just the matrix alone. Unfortunately you can't just immediately jump in to soldering.
+                First, you have to prep the Leds. For every Led I checked to make sure they worked, sanded them to diffuse the lenses(otherwise light would only shine from the top),
+                marked the ground pin, and bent the pins in a desired shape for soldering. I then organized them into 4 groups, each having the ground pin
+                rotated 90 degrees to the right from the previous group.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img class="rotate" src="../img/atls_object/inter_object/prepped_Leds.jpeg" alt="Four groups of Leds">
+        </div>
+        <div class="item-1">
+            <p>
+                Next came the soldering. Each Led needed to be soldered 90 degrees rotated compared to the Led before it. The method I used to keep
+                spacing consistent was using a PCB board and counting the holes between the Leds. If I were to go back and do this again, one of the 
+                things I would definitley do different is instead take the time to make a wooden board to fit my Leds into. Unfortunately, using this method
+                made it a pain to have a consistent width on my Leds as well as a pain to solder.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img class="rotate" src="../img/atls_object/inter_object/pcb_board.jpeg" alt="pcb board">
+        </div>
+        <div class="item-1">
+            <p>
+                Using a stripped and straightened 22 wire, I soldered the 4 Leds together connected by 4 wires. Then it was just a matter
+                of cutting some excess wire and leads and you have a finished spire! Now just have to do that 15 more times...
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img class="rotate" src="../img/atls_object/inter_object/finished_spire.jpeg" alt="finished spire">
+        </div>
+        <div class="item-1">
+            <p>Because each Led is rotated differently from the one underneath it, depending on which wire you make ground, you can
+                affect each Led individually.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <iframe src="https://www.youtube.com/embed/-Qc67nD5xtQ"></iframe>
+        </div>
+        <div class="item-1">
+            <p>
+                Now that all the spires are complete(10 hours later), All I had to do was put all of them together in a 4x4 grid on a fresh
+                pcb board!
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img src="../img/atls_object/inter_object/full_board.jpeg" alt="full board">
+        </div>
+        <div class="item-1">
+            <h4>The Wiring</h4>
+            <p>Now that all my spires were ready, it was time to do some wiring. For the charlieplexing setup and wiring diagram,
+                please refer to this <a href="https://aglick.com/charliecube.html">website</a> made by Asher Glicks. His design and
+                walkthrough, as well as the header code he wrote, is why I was able to get my Led cube to work. To the right you can 
+                see an image of the finished bottom of my pcb board, with all the cross wiring attached.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img class="rotate" src="../img/atls_object/inter_object/cube_wiring.jpeg" alt="cube wiring">
+        </div>
+        <div class="item-1">
+            <p>Finally I soldered the 16 connections I had made to 16 pins on my arduino board, and ran some test code
+                to make sure everything was working nicely together.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img  src="../img/atls_object/inter_object/working_cube.jpeg" alt="working cube">
+        </div>
+        <div class="item-1">
+            <p>
+                Next I prepped my microphones, button, and speaker to be connected. This required some soldering as well,
+                but at this point I was getting pretty good at it.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img class="rotate" src="../img/atls_object/inter_object/microphone.jpeg" alt="soldered microphone">
+        </div>
+        <div class="item-1">
+            <p>Now with everything connected and ready to go. It was time to start writing some code and building an enclosure.</p>
+        </div>
+        <div class="item-1_aside">
+            <img src="../img/atls_object/inter_object/finished_wiring.jpeg" alt="finished wiring">
+        </div>
+        <div class="item-1">
+            <h4>The Diagrams
+            </h4>
+            <p>Shown to the right is a great wiring diagram showing how charlieplexing works with 20 Leds and 5 inputs. 
+                For my project the wiring is the same as shown to the right, except instead of 5 inputs I have 16 linked to 
+                64 Leds. Credit for this schematic goes to Tom F. and you can find the webpage showing his work and diagrams 
+                <a href="https://tomscircuits.blogspot.com/2010/10/charlie-cube.html">here</a>.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img src="../img/atls_object/inter_object/charlieplex.png" alt="charlieplex diagram">
+        </div>
+        <div class="item-1">
+            <p>
+                Next is a fritzing diagram showing the rest of the connections. The Led is meant to represent the 4x4x4 Led Matrix.
+                The breadboard is used for showing the 5v and GND connections. In reality a breadboard wasn't actually used, instead
+                a circuit board was used and everything was soldered together.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img src="../img/atls_object/inter_object/fritzing.png" alt="fritzing diagram">
+        </div>
+        <div class="item-1">
+            <h4>The Enclosure</h4>
+            <p>I used fusion 360 to model the enclosure for my object. To the right you can see a picture showing the bottom of the box
+                for my object. Everything was modeled purposely so that all the components would fit in smoothly. I also designed a top portion to fit on top
+                of my circuit board, with slots for plexiglass to surround my Leds. I also painted the box black to give it a cleaner look.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img src="../img/atls_object/inter_object/enclosure.png" alt="enclosure">
+        </div>
+        <div class="item-1">
+            <h4>The Final Product</h4>
+            <p>Pictured to the right you can see my final product! Here is the <a href="https://gist.github.com/EliGrah/79bf201748c7fb275931e9aa822dda4a">link</a>
+                to my code. The header file as well as the patterns were created by Asher Glicks and can be found <a href="https://aglick.com/charliecube.html">here</a>. I 
+                did manipulate the premade patterns to be reactive to the noise recieved by the microphones as well as built a system for the button to cycle through 
+                the patterns. The header file shows how complex the actual code for this cube is, using bit shifts mainly to be able to target and manipulate each
+                led even though only 16 pins were used.
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <img src="../img/atls_object/inter_object/finished_box.jpeg" alt="finished product">
+        </div>
+        <div class="item-1">
+            <p>Unfortunately, many things went wrong in the final hour. The speaker ended up being a dud, and I accidentally
+                wired my button wrong, making it so that instead of giving an input when pressed, the button would short circuit the
+                entire board. I remedied this by making my code choose a random number every time the arduino booted on, and started a pattern
+                based on that, but this design ended up being my project's demise. Due to the board being short circuited every time I pressed the button,
+                eventually the board ended up getting completely burned out from constantly being short circuited with no resistance. As a result, after only a couple
+                hours of being on display, my interactive object no longer works. Due to this,
+                the only video I have of the object in action is a short 5 second video of the box reacting to my voice, shown to the right. 
+            </p>
+        </div>
+        <div class="item-1_aside">
+            <iframe src="https://www.youtube.com/embed/1oNlO6YtNgk"></iframe>
+        </div>
+    </main>
+   
+    
+
+    <script src="./java/myJava.js"></script> 
+</body>
+</html>
